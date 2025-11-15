@@ -36,11 +36,23 @@ router.post(
         return res.status(400).json({ success: false, message: 'Email is already registered' });
       }
 
+      const desiredRole = role === 'MANAGER' ? 'MANAGER' : 'STORE_KEEPER';
+
+      // Enforce a maximum of 5 managers in the system
+      if (desiredRole === 'MANAGER') {
+        const managerCount = await User.countDocuments({ role: 'MANAGER' });
+        if (managerCount >= 5) {
+          return res
+            .status(400)
+            .json({ success: false, message: 'Maximum number of managers reached (5). Please sign up as Store Keeper.' });
+        }
+      }
+
       const user = await User.create({
         name,
         email,
         password,
-        role: role === 'MANAGER' ? 'MANAGER' : 'STORE_KEEPER',
+        role: desiredRole,
       });
 
       const token = generateToken(user._id);
