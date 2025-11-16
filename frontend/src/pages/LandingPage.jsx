@@ -12,7 +12,7 @@ const LandingPage = () => {
       <header className="border-b border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-950/80 backdrop-blur">
         <div className="max-w-6xl mx-auto px-3 md:px-8 py-2.5 md:py-3 flex items-center justify-between gap-2 md:gap-4">
           <div className="flex items-center gap-1 md:gap-3 min-w-0">
-            <span className="text-sm md:text-lg font-semibold text-slate-900 dark:text-slate-100">
+            <span className="text-sm md:text-[24px] font-semibold text-slate-900 dark:text-slate-100">
               Commodities Management
             </span>
           </div>
@@ -36,7 +36,7 @@ const LandingPage = () => {
               onClick={() => navigate('/signup')}
               className="text-[11px] md:text-xs px-3 md:px-4 py-1.5 md:py-2 rounded-md bg-sky-600 text-white hover:bg-sky-700"
             >
-              Get started
+             Signup
             </button>
           </div>
         </div>
@@ -46,10 +46,10 @@ const LandingPage = () => {
       <main className="flex-1">
         <div className="max-w-6xl mx-auto px-4 md:px-8 py-8 md:py-14">
           <section className="max-w-3xl mx-auto text-center mb-10">
-            <p className="inline-flex items-center px-2.5 py-1 rounded-full text-[11px] font-medium bg-sky-100 text-sky-700 dark:bg-sky-900/40 dark:text-sky-200 mb-3">
+            <p className="inline-flex items-center px-2.5 py-1 rounded-full text-[16px] font-medium bg-sky-100 text-sky-700 dark:bg-sky-900/40 dark:text-sky-200 mb-3">
               Simple dashboard for managers and store keepers
             </p>
-            <h1 className="text-2xl md:text-3xl lg:text-[2.6rem] font-semibold tracking-tight text-slate-900 dark:text-slate-50 mb-3">
+            <h1 className="text-2xl md:text-[28px] lg:text-[2.6rem] font-semibold tracking-tight text-slate-900 dark:text-slate-50 mb-3">
               Stay on top of your store inventory.
             </h1>
             <p className="text-sm md:text-[1.02rem] text-slate-600 dark:text-slate-400 mb-6">
@@ -80,7 +80,7 @@ const LandingPage = () => {
                 <div className="inline-flex items-center gap-1 text-sky-600 dark:text-sky-300 text-[11px] font-medium">
                   <span className="text-base">📊</span> Manager view
                 </div>
-                <p className="text-[11px] md:text-sm">
+                <p className="text-[11px] md:text-[14px]">
                   See total products, stock units, inventory value, and low stock items at a glance.
                 </p>
               </div>
@@ -88,7 +88,7 @@ const LandingPage = () => {
                 <div className="inline-flex items-center gap-1 text-emerald-600 dark:text-emerald-300 text-[11px] font-medium">
                   <span className="text-base">📦</span> Store Keeper view
                 </div>
-                <p className="text-[11px] md:text-[13px]">
+                <p className="text-[11px] md:text-[14px]">
                   Quickly add or update products and keep stock levels accurate.
                 </p>
               </div>
@@ -96,7 +96,7 @@ const LandingPage = () => {
                 <div className="inline-flex items-center gap-1 text-amber-600 dark:text-amber-300 text-[11px] font-medium">
                   <span className="text-base">🔐</span> Secure access
                 </div>
-                <p className="text-[11px] md:text-[13px]">
+                <p className="text-[11px] md:text-[14px]">
                   OTP-based password reset using your email, secured with JWT authentication.
                 </p>
               </div>
@@ -111,7 +111,7 @@ const LandingPage = () => {
             </div>
           </section>
 
-          <section className="max-w-3xl mx-auto mt-6 text-center text-xs md:text-sm text-slate-500 dark:text-slate-400">
+          <section className="max-w-3xl mx-auto mt-6 text-center text-xs md:text-[16px] text-slate-500 dark:text-slate-400">
             <p>
               You can sign up with your own email or use the seeded accounts described in the README when running the
               app locally.

@@ -11,12 +11,14 @@ import ProductsPage from './pages/ProductsPage.jsx';
 import ProductFormPage from './pages/ProductFormPage.jsx';
 import ProtectedRoute from './components/ProtectedRoute.jsx';
 import RoleRoute from './components/RoleRoute.jsx';
+import LandingPage from './pages/LandingPage.jsx';
 
 const App = () => {
   return (
     <ThemeProvider>
       <AuthProvider>
         <Routes>
+           <Route path="/" element={<LandingPage />} />
           <Route path="/signup" element={<SignupPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/forgot-password" element={<ForgotPasswordPage />} />
