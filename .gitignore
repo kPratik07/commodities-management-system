@@ -2,3 +2,6 @@
 dist/
 .DS_Store
 *.log
+# Env files
+.env
+*.env
